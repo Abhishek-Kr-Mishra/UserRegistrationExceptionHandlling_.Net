@@ -8,10 +8,12 @@ namespace UserRegistrationExceptionHandlingProgram
         {
             Console.WriteLine("Welcome To User Registration Exception Handling");
             PatternsMatching patterns = new PatternsMatching();
-            //Console.WriteLine(patterns.ValidateFirstName(null));
 
             if (patterns.ValidateFirstName(null)) { Console.WriteLine("Valid First Name"); }
             else { Console.WriteLine("Invalid First Name"); }
+
+            if (patterns.ValidateLastName(null)) { Console.WriteLine("Valid Last Name"); }
+            else { Console.WriteLine("Invalid Last Name"); }
         }
     }
 }
