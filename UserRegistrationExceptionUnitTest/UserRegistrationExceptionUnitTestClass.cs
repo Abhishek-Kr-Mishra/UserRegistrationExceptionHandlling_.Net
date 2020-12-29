@@ -59,5 +59,18 @@ namespace UserRegistrationExceptionUnitTest
                 Assert.AreEqual("Regex can't Validate null Phone Number", e.Message);
             }
         }
+        [TestMethod]
+        public void GivenNullPassword_ShouldThrow_UserRegistrationCustomException()
+        {
+            try
+            {
+                bool expectedValue = true;
+                Assert.AreEqual(expectedValue, patternsMatching.ValidatePassword(null));
+            }
+            catch (UserRegistrationCustomException e)
+            {
+                Assert.AreEqual("Regex can't Validate null Password", e.Message);
+            }
+        }
     }
 }

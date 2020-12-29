@@ -17,8 +17,12 @@ namespace UserRegistrationExceptionHandlingProgram
 
             if (patterns.ValidateEmail(null)) { Console.WriteLine("Valid Email ID"); }
             else { Console.WriteLine("Invalid Email ID"); }
+
             if (patterns.ValidatePhoneNumber(null)) { Console.WriteLine("Valid Phone Number"); }
             else { Console.WriteLine("Invalid Phone Number"); }
+
+            if (patterns.ValidatePassword(null)) { Console.WriteLine("Valid Password"); }
+            else { Console.WriteLine("Invalid Password"); }
         }
     }
 }
