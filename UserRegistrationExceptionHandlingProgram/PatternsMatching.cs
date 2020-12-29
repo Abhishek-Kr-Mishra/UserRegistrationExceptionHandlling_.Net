@@ -9,6 +9,7 @@ namespace UserRegistrationExceptionHandlingProgram
     {
         public static string REGEX_firstName = "^[A-Z][a-zA-Z]{2,}";
         public static string REGEX_lastName = "^[A-Z][a-zA-Z]{2,}";
+        public static string REGEX_EMAIL = @"^[A-Za-z0-9]+([.\-_][a-zA-Z0-9]+)*@[a-zA-Z0-9]+[.][a-zA-Z]{2,4}([\.][a-zA-Z]{2}){0,1}$";
         public bool ValidateFirstName(string fname)
         {
             if(fname == null)
@@ -24,6 +25,14 @@ namespace UserRegistrationExceptionHandlingProgram
                 throw new UserRegistrationCustomException(UserRegistrationCustomException.ExceptionType.NULL_MESSAGE, "Regex can't Validate null Last Name");
             }
             return Regex.IsMatch(lname, REGEX_lastName);
+        }
+        public bool ValidateEmail(string email)
+        {
+            if (email == null)
+            {
+                throw new UserRegistrationCustomException(UserRegistrationCustomException.ExceptionType.NULL_MESSAGE, "Regex can't Validate null Email ID");
+            }
+            return Regex.IsMatch(email, REGEX_EMAIL);
         }
     }
 }

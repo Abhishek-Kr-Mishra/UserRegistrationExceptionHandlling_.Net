@@ -14,6 +14,9 @@ namespace UserRegistrationExceptionHandlingProgram
 
             if (patterns.ValidateLastName(null)) { Console.WriteLine("Valid Last Name"); }
             else { Console.WriteLine("Invalid Last Name"); }
+
+            if (patterns.ValidateEmail(null)) { Console.WriteLine("Valid Email ID"); }
+            else { Console.WriteLine("Invalid Email ID"); }
         }
     }
 }

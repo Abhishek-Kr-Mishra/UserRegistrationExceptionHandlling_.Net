@@ -33,5 +33,18 @@ namespace UserRegistrationExceptionUnitTest
                 Assert.AreEqual("Regex can't Validate null Last Name", e.Message);
             }
         }
+        [TestMethod]
+        public void GivenNullEmailID_ShouldThrow_UserRegistrationCustomException()
+        {
+            try
+            {
+                bool expectedValue = true;
+                Assert.AreEqual(expectedValue, patternsMatching.ValidateEmail(null));
+            }
+            catch (UserRegistrationCustomException e)
+            {
+                Assert.AreEqual("Regex can't Validate null Email ID", e.Message);
+            }
+        }
     }
 }
