@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30804.86
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserRegistrationExceptionHandlingProgram", "UserRegistrationExceptionHandlingProgram.csproj", "{690C0B4B-DD11-49A6-B700-9D9F325D2F8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserRegistrationExceptionHandlingProgram", "UserRegistrationExceptionHandlingProgram.csproj", "{690C0B4B-DD11-49A6-B700-9D9F325D2F8E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserRegistrationExceptionUnitTest", "..\UserRegistrationExceptionUnitTest\UserRegistrationExceptionUnitTest.csproj", "{2FADC195-E83E-45F3-B789-5F209C205155}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{690C0B4B-DD11-49A6-B700-9D9F325D2F8E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{690C0B4B-DD11-49A6-B700-9D9F325D2F8E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{690C0B4B-DD11-49A6-B700-9D9F325D2F8E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FADC195-E83E-45F3-B789-5F209C205155}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FADC195-E83E-45F3-B789-5F209C205155}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FADC195-E83E-45F3-B789-5F209C205155}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FADC195-E83E-45F3-B789-5F209C205155}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
